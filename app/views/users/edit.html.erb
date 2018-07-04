@@ -1,0 +1,14 @@
+<%= provide(:title, "Update Profile")  %>
+
+<div class="row">
+    <div class="col-md-6 col-center">
+        <h1 class="text-center"><%= yield(:title) %></h1>
+
+        <%= render 'form' %>
+
+        <%= gravatar_for @user %>
+        <small>
+        	<a target="_blank" href="http://gravatar.com/emails">Update gravatar</a>
+    	</small>
+    </div>
+</div>
